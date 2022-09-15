@@ -16,22 +16,21 @@
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
 # Inherit some common VoltageOS stuff.
-$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
+$(call inherit-product, vendor/xdroid/config/common.mk)
 
-# Official-ify
-VOLTAGE_BUILD_TYPE := OFFICIAL
+XDROID_BOOT := 1080
+XDROID_MAINTAINER := OnettBoots
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_INCLUDE_STOCK_ARCORE := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
-# UDFPS animations
+# Extra
 EXTRA_UDFPS_ANIMATIONS := true
 
-# Bootanimation Resolution
-TARGET_BOOT_ANIMATION_RES := 2160
-
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := voltage_raphael
+PRODUCT_NAME := xdroid_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := MI 9T Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
