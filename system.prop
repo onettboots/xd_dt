@@ -118,3 +118,7 @@ ro.vendor.qti.va_aosp.support=1
 
 # WiFi
 config.disable_rtt=true
+
+# Old
+ro.ril.disable.power.collapse=1
+pm.sleep_mode=1
