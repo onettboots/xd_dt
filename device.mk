@@ -55,6 +55,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     KProfiles
 
+# KProfiles
+PRODUCT_PACKAGES += \
+    GcamBSG
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService-Soong \
