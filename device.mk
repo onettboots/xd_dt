@@ -55,7 +55,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     KProfiles
 
-# KProfiles
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/bin/boolx_kprofiles:$(TARGET_COPY_OUT_SYSTEM)/bin/boolx_kprofiles
+
+# Gcam
 PRODUCT_PACKAGES += \
     GcamBSG
 
