@@ -13,9 +13,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xdroid_raphael.mk
+    $(LOCAL_DIR)/lineage_raphael.mk
 
 COMMON_LUNCH_CHOICES := \
-    xdroid_raphael-user \
-    xdroid_raphael-userdebug \
-    xdroid_raphael-eng
+    lineage_raphael-user \
+    lineage_raphael-userdebug \
+    lineage_raphael-eng
